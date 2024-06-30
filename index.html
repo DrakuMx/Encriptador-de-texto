@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto - Alura">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/aluraicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagenes/Logo.png" alt="Logo Alura">
+        </div>
+    </header>
+
+    <main>
+        <section id="contenedor-text">
+            <textarea id="text-int" cols="55" rows="15" placeholder="Ingrese el texto aqui" required></textarea>    
+            <div id="advertencias"> 
+                <img id="img-adv" src="imagenes/advertencia.png" alt="icono de advertencia">
+                <p id="text-adv">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div id="botones">
+                <button onclick="btonEncriptar();" id="boton-encriptar">Encriptar</button>
+                <button onclick="btonDesencriptar();" id="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section id="bandeja">
+            <textarea id="mensaje" cols="20" rows="10" readonly></textarea>
+            <div id="boton-copiar">
+                <button id="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://github.com/DrakuMx" target="_blank">Git Hub</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+    
